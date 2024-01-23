@@ -1,0 +1,36 @@
+{
+    "BooksName" : "book name",
+    "Author" : "Gabriel García Márquez",
+    "year" : 1927,
+    "genra" : "Novels",
+    "books" : [
+      {
+        "name" : "One Hundred Years of Solitude",
+        "year" : 1967,
+        "pageNumber" : "Unknown",
+        "genra" : [
+          "magic realism",
+          "Romance",
+          "Dark"
+        ]
+      },
+      {
+        "name" : "The Autumn of the Patriarch",
+        "year" : 1950,
+        "pageNumber" : "Unknown",
+        "genra" : [
+          "magic realism",
+          "Romance"
+        ]
+      },
+      {
+        "name" : "Love in the Time of Cholera",
+        "year" : 1970,
+        "pageNumber" : "Unknown",
+        "genra" : [
+          "Romance"
+        ]
+      }
+    ]
+  }
+  
