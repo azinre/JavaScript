@@ -1,0 +1,74 @@
+
+{
+    "FruitsName" : "Fresh Fruits And Vegetables",
+    "vegenm" : "",
+    "price" : "",
+    "type" : "",
+    "fruits" : [
+      
+      {
+        "images": "images/apple.jpg",
+        "name" : "Apple",
+        "price" : 6.5,
+        "weight" : "1kg",
+        "type" : [
+          "Local Farm",
+          "Not Organic"
+        ]
+      }
+      ,
+      {
+        "images": "images/Orange.jpg",
+        "name" : "Orange",
+        "price" :9.5,
+        "weight" : "$1kg",
+        "type" : [
+          "Local Farm",
+          "Organic"          
+        ]
+      },
+      {
+        "images": "images/bnana.jpg",
+        "name" : "Bnana",
+        "price" : 9.5,
+        "weight" : "$1kg",
+        "type" : [
+          "Local Farm",
+          "Organic"
+          
+        ]
+      },
+      {
+        "images": "images/Tomato.jpg",
+        "name" : "Tomato",
+        "price" : 2.5,
+        "weight" : "$1kg",
+        "type" : [
+          "Local Farm",
+          "Organic"
+        ]
+      },
+      
+      {
+        "images": "images/eggplanet.jpg",
+        "name" : "Ellplanet",
+        "price" : 2.5,
+        "weight" : "$/1kg",
+        "type" : [
+          "Local Farm",
+          "Organic"
+        ]
+      },
+      {
+        "images": "images/Lemon.jpg",
+        "name" : "Lemon",
+        "price" : 2.5,
+        "weight" : "$/kg",
+        "type" : [
+          "Local Farm",
+          "Organic"
+        ]
+      }
+    ]
+  }
+  

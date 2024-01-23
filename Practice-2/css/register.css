@@ -1,0 +1,178 @@
+.alert{
+    color:red;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    color: white;
+    background-color: #2f3031;
+    font-size: 14pt;
+    
+}
+#coname {
+    float: left;
+    width: 150px;
+    height: 150px;
+    margin:auto;
+    padding: 10px;
+ }
+ 
+footer, footer a {
+    background-color: #535557;
+    color: white;
+    font-size: 18pt;
+    height: 120px;
+   
+} 
+#footerlogo{
+    width: 100px;
+    height: 100px;
+    float: right;
+}
+
+a {
+    text-decoration: none;
+    text-align: left;
+    padding: 10px;
+    background-color: #535557;
+    color: white;
+    font-size: 18pt;
+    margin: auto;
+}
+
+.tt2{
+    text-align: center;
+    color: rgb(223, 223, 14);
+}
+section {
+    font-size: 20pt;
+}
+
+.title{
+    text-align: center;
+}
+footer {
+    text-align: right;
+    padding: 10px;
+}
+
+.registerbtn {
+    opacity: 1;
+    text-align: center;
+    color:white;
+    background-color: #0c361c;
+    border-radius: 1ch;
+    width: 150px;
+    height: 45px;
+    font-size: 14pt;
+  }
+.registerbtn:hover{
+    background-color:green;
+}
+
+.registrationadd{
+    text-align: left;
+    }
+address {
+    font-style: normal;
+}
+.projecttable{
+    text-align: left;
+    padding: 10px;
+    border: 0;
+}
+.title{
+    color: #ffffff;
+}
+.div1{
+    display: inline-block
+}
+#ullist{
+    list-style: none;
+    
+}
+#catname{
+    width: 200px;
+}
+#age{
+    width:70px;
+    
+}
+.checkbox-inline{
+    display: inline-block;}
+
+#diet{
+    width: 100px;
+}
+
+.phone{
+    width: 250px;
+    
+}
+#email{
+    width:250px;
+   
+}
+#Describe_Terrlrotial{
+    width: 250px;
+}
+
+#leavetime{
+    width: 200px;
+}
+
+.alert{
+    color:rgb(137, 162, 52);
+    font-size: 15pt;
+}    
+
+.imgsize{
+    width: 270px; 
+    height: 300px;
+}
+.buttonloc{
+    text-align: center;
+}
+.button {
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+.button1 {background-color: #000000;}
+
+.fv{
+    text-align: center;
+
+  }
+.regispic{
+    float: right;
+    height: 520px;
+    margin-right: 30px;
+
+}
+#ul-reg1{
+    display: grid;
+    color: #ffffff;
+    grid-template-columns: repeat(3,1fr);
+    width: 800px;
+    grid-gap: 10px;
+    grid-auto-rows: auto;
+    margin: 30px auto;
+    text-align: left;
+    list-style: none
+}
+.rfv{
+    text-align: left;
+}
+.tt2r{
+    text-align: center;
+}
+.contactinfo{
+    font-weight: 10pt;
+}

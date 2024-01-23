@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="author" content="Azin Rezaeian">
+  <meta name="email" content="reza0038@algonquinlive.com">
+  <title>Green Farm</title>
+  <link href="css/register.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+  <body>
+    <header>
+      <img id="coname" src="images/Screenshot 2022-12-01 09.54.54.png " alt=" logo">
+    </header>
+    <nav>
+      <a href="index.html">HOME </a>
+    </nav>
+    <main>
+      <h1 class="title"><strong> Order groceries for delivery or pickup today</strong></h1>
+      <h3 class="tt2r">Whatever you want from local stores, brought right to your door.</h3>
+      <div>
+        <img class="regispic" src="images/regis.png" alt="regis">
+      </div>
+      <form name="profileForm" id="profileForm">
+        <fieldset>
+          <legend>Contact Information</legend>
+          <div class="contactinfo">
+            <section class="contactinfo">
+              <div>
+                <label for="name" id="Fname">First Name:</label>
+                <input type="text" id="fname" name="fname" placeholder="Mr.Pak">
+                <span id="fnameWarning" class="alert"></span>
+              </div>
+              <div>
+                <label for="name" id="lname">Last Name:</label>
+                <input type="text" id="emgsname" name="emgsname" placeholder="Mr.pk">
+                <span id="cnameWarning" class="alert"></span>
+              </div>
+              <div>
+                <label for="email">Email: </label>
+                <input type="email" id="email" name="email" placeholder="" onfocusout="checkEmail()">
+                <span id="emailWarning" class="alert"></span>
+              </div>
+            </section>
+
+            <section class="contactinfo">
+              <div>
+                <lable for="address1">Address:</lable>
+                <input type="text" name="address1" id="address1" placeholder="100 Avenue name.">
+                <span id="address1Warning" class="alert"></span>
+              </div>
+              <div>
+                <lable for="address2">Address2:</lable>
+                <input type="text" name="address2" id="address2" placeholder="Optional">
+              </div>
+              <div>
+                <lable for="city">City:</lable>
+                <input type="text" name="city" id="city" placeholder="City">
+                <span id="cityWarning" class="alert"></span>
+              </div>
+              <div>
+                <lable for="province">Province:</lable>
+                <select name="province" id="province">
+                  <option value="">Select a province</option>
+                  <option value="AB">Alberta</option>
+                  <option value="BC">British Columbia</option>
+                  <option value="MB">Manitoba</option>
+                  <option value="NB">New Brunswick</option>
+                  <option value="NS">Nova Scotia</option>
+                  <option value="ON">Ontario</option>
+                  <option value="QC">Quebec</option>
+                  <option value="SK">Saskatchewan</option>
+                  <option value="NT">Northwest Terretories</option>
+                </select>
+                <span id="provinceWarning" class="alert"></span>
+              </div>
+              <div>
+                <lable for="country">Country:</lable>
+                <select name="country" id="country">
+                  <option value="">Select a country</option>
+                  <option value="CA">Canada</option>
+                  <option value="US">United States</option>
+                  <option value="OTH">Others</option>
+                </select>
+                <span id="countryWarning" class="alert"></span>
+              </div>
+              <div>
+                <label for="cphone">Phone </label>
+                <input class="phone" type="tel" id="cphone" name="cphone" pattern="[0-9]{3}[0-9]{3}[0-9]{4}"
+                  placeholder="(123) 456-7980">
+                <select name="phoneType" id="phoneType">
+                  <option value="home">Home</option>
+                  <option value="home">Cell</option>
+                  <option value="home">Work</option>
+                </select>
+                <span id="cphoneWarning" class="alert"></span>
+                <div>
+                  <lablel for="newsletter"> Sign up for our weekly promotions</lablel>
+                  <input type="checkbox" id="newsletter" class="newsletter" checked>
+                </div>
+
+              </div>
+            </section>
+
+          </div>
+        </fieldset>
+        <hr>
+        <hr>
+        <div>
+          <fieldset>
+            <legend>Delivery Information </legend>
+
+            <section>
+              <div>
+                <label for="date">Date:</label>
+                <input type="date" id="date" name="date" value="2022-1-20" min="2022-01-01">
+                <span class="alert" id="dateError">Please enter after 2022-01-01!</span>
+              </div>
+
+              <label for="days">Week Days</label>
+              <div name="days" id="days">
+                <option id="mon" name="days" class="checkbox-inline"><input type="checkbox" value="mon"> Mon
+                </option>
+                <option id="tue" name="days" class="checkbox-inline"><input type="checkbox" value="tue"> Tue
+                </option>
+                <option id="wed" name="days" class="checkbox-inline"><input type="checkbox" value="wed"> Wed
+                </option>
+                <option id="thu" name="days" class="checkbox-inline"><input type="checkbox" value="thu"> Thu
+                </option>
+                <option id="fri" name="days" class="checkbox-inline"><input type="checkbox" value="fri"> Fri
+                </option>
+                <option id="sat" name="days" class="checkbox-inline"><input type="checkbox" value="" disabled> Sat
+                </option>
+                <option id="sun" name="days" class="checkbox-inline"><input type="checkbox" value="" disabled> Sun
+                </option>
+              </div>
+              <span id="daysWarning" class="alert"></span>
+              <div>
+                <label for="Time_Arrive">Time Arrive </label>
+                <select name="arrivetime" id="arrivetime">
+
+                  <option value=""></option>
+                  <option value="06:00">06.00 AM</option>
+                  <option value="06:30">06.30 AM</option>
+                  <option value="07:00">07.00 AM</option>
+                  <option value="07:30">07.30 AM</option>
+                  <option value="08:00">08.00 AM</option>
+                  <option value="08:30">08.30 AM</option>
+                  <option value="09:00">09.00 AM</option>
+                  <option value="09:30">09.30 AM</option>
+                  <option value="10:00">10.00 AM</option>
+                  <option value="10:30">10.30 AM</option>
+                  <option value="11:00">11.00 AM</option>
+                  <option value="11:30">11.30 AM</option>
+                  <option value="12:00">12.00 PM</option>
+                  <option value="12:30">12.30 PM</option>
+                  <option value="13:00">01.00 PM</option>
+                  <option value="13:30">01.30 PM</option>
+                  <option value="14:00">02.00 PM</option>
+                  <option value="14:30">02.30 PM</option>
+                  <option value="15:00">03.00 PM</option>
+                  <option value="15:30">03.30 PM</option>
+                  <option value="16:00">04.00 PM</option>
+                  <option value="16:30">04.30 PM</option>
+                  <option value="17:00">05.00 PM</option>
+                  <option value="17:30">05.30 PM</option>
+                  <option value="18:00">06.00 PM</option>
+                  <option value="18:30">06.30 PM</option>
+                  <option value="19:00">07.00 PM</option>
+                  <option value="19:30">07.30 PM</option>
+                  <option value="20:00">08.00 PM</option>
+                  <option value="20:30">08.30 PM</option>
+                  <option value="21:00">09.00 PM</option>
+                  <option value="21:30">09.30 PM</option>
+                  <option value="22:00">10.00 PM</option>
+                  <option value="22:30">10.30 PM</option>
+                  <option value="23:00">11.00 PM</option>
+                  <option value="23:30">11.30 PM</option>
+                  <option value="23:30">12.00 AM</option>
+                </select>
+                <span id="arriveWarning" class="alert"></span>
+              </div>
+              <div>
+                <label for="bag"><input id="specialbag" type="checkbox" value="yes" name="specialbag"
+                    onclick="mybagFunction()"> Do you want pag </label>
+                <label for="Describe_bag" style="display:none" id="Describe_bag">Number of bag
+                  <input type="number" id="bag" name="bag"></label>
+                <span id="bagWarning" class="alert"></span>
+                <script>
+                  function mybagFunction() {
+                    var checkBox = document.getElementById("specialbag");
+                    var text = document.getElementById("Describe_bag");
+                    if (checkBox.checked == true) {
+                      text.style.display = "block";
+                      document.querySelector('#bagWarning').textContent = "*Please put the number of bag*";
+                    }
+                  }                          
+                </script>
+              </div>
+            </section>
+          </fieldset>
+        </div>
+        <div>
+          <label for="oname">Receiver's Name </label>
+          <input type="text" id="Ownersname" name="Ownersname" list="OWNERSName"  >
+          <datalist id="OWNERSName">
+            <option value="Myself">Myself</option>
+            <option value="Lobyman">Lobyman</option>
+            <option value="Uber">Uber</option>
+          </datalist>
+          <span id="OwnernameWarning" class="alert"></span>
+        </div>
+        <input type="submit" value="Submit" name="submitBtn" class="registerbtn">
+        <input type="reset" id="resetBtn" value="reset" name="resetBtn" class="registerbtn" >
+        </div>
+      </form>
+      <footer>
+        <img id="footerlogo" src="images/Screenshot 2022-12-01 09.54.54.png" alt="logos" ">              
+              <address>
+                  
+                  <a href=" mailto:azin.rg@gmail.com">contactus@greenfarm.ca</a>
+        </address>
+      </footer>
+      <script src="script/validation.js"></script>
+  </body>
+
+</html>

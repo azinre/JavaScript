@@ -1,0 +1,99 @@
+html {
+    font-family:  helvetica, arial, sans-serif;
+    color: rgb(208, 208, 208);
+}
+
+body {
+    width: 800px;
+    margin: 0 auto;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    color: white;
+    background-color: #2f3031;
+}
+
+nav {
+    text-align: left;
+    padding: 10px;
+    background-color: #535557;
+    color: white;
+    font-size: 18pt;
+    margin: auto;
+}
+
+a {
+    text-decoration: none;
+    text-align: left;
+    padding: 10px;
+    background-color: #535557;
+    color: white;
+    font-size: 18pt;
+    margin: auto;
+}
+
+footer a {
+    background-color: #535557;
+    color: white;
+    font-size: 18pt;
+    margin: auto;
+    text-align: center;
+}
+
+h1 {
+    font-size: 3rem;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+header p {
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    color: rgba(255, 237, 38, 0.578);
+}
+
+section article {
+    width: 33%;
+    float: left;
+    color: rgb(255, 255, 255);
+}
+
+section p {
+    margin: 5px 0;
+}
+
+section ul {
+    margin-top: 0;
+}
+
+h2 {
+    font-size: 2.5rem;
+    letter-spacing: -5px;
+    margin-bottom: 10px;
+}
+
+#coname {
+    float: left;
+    width: 150px;
+    height: 150px;
+    margin: auto;
+    padding: 10px;
+}
+
+.screen {
+    background-color: rgba(225, 225, 225, 0.75);
+    width: 90PX;
+    height: 40px;
+    padding: 10px;
+    text-align: left;
+}
+
+.screen .next-operand {
+    color: rgb(0, 0, 0);
+    font-size: 2.5 rem;
+}
+
+#bag {
+    text-align: left;
+    font-size: 10pt;
+}

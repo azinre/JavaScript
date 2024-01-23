@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="Azin Rezaeian">
+    <meta name="email" content="reza0038@algonquinlive.com">
+    <title>Green Farm</title>
+    <link href="css/fruitvege.css" rel="stylesheet" type="text/css">
+    <header>
+        <img id="coname" src="images/Screenshot 2022-12-01 09.54.54.png " alt=" logo">
+    </header>
+    <nav>
+        <a href="index.html">HOME </a>
+    </nav>
+    </header>
+</head>
+<body>
+    <header></header>
+    <section></section>
+    <div>
+    </div>
+    <section>
+        <div id="bag">
+            <p>Do you want a bag </p>
+            <option><input type="radio" id="Paper" name="toc" value="Paper"> Paper Bag <br></option>
+            <option><input type="radio" id="Plactic" name="toc" value="Plactic"> Plastic <br></option>
+            <option><input type="radio" id="reusable" name="toc" value="Reusable" checked> Reusable<br></option>
+            <option><input type="radio" id="Others" name="toc" value="Others" onclick="myFunction()"> Other<br></option>
+            <div>
+                <option id="describeT" name="describeT" style="display:none">Describe Others <br>
+                    <input type="text" id="Describe_Terrlrotial" name="describeT" value="" placeholder="">
+                </option>
+            </div>
+            <script>
+                function myFunction() {
+                    var checkBox = document.getElementById("Others");
+                    var text = document.getElementById("describeT");
+                    if (checkBox.checked == true) {
+                        text.style.display = "block";
+                    } else {
+                        text.style.display = "none";
+                    }
+                }                          
+            </script>
+            <span id="temprementWarning" class="alert"></span>
+        </div>
+    </section>
+    <hr>
+    <hr>
+    <section class="total">
+        <p>Total Price($CAD):</p>
+        <div class="screen">
+            <div display class="next-operand"></div>
+        </div>
+        <div>
+        <input type="submit" value="Submit" name="submitBtn" class="registerbtn">
+        <input type="reset" id="resetBtn" value="Reset" name="resetBtn" class="registerbtn">
+        </div>
+    </section>
+    <a href="registration.html"><img id="footerlogo" src="images/order.png"></a>
+    <script src="script/request.js"></script>
+</body>
+
+</html>
