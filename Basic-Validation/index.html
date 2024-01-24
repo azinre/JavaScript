@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Azin Rezaeian">
+    <meta name="email" content="reza0038@algonquinlive.com">
+    <title>Registration Fluffy Friends Cat Daycare</title>
+    <link href="script/profile.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+    <body>
+      <header>
+          <div id ="coname">
+          <img  src="images/fluffylogo(300X300).png" alt="happy cat logo">
+          </div>
+          <div id="logoname"> 
+          <img src="images/Untitled-3.jpg" alt="fluffy friends cat daycare">
+          </div>
+      </header>       
+      <nav>
+          <a href="index.html">HOME </a>
+      </nav>
+      <main>
+          <h1 class="title" > Cat Intake Form</h1>
+          <img id="catpic" src="images/persiancat_91229702.jpg" alt="percian_cat">
+          <div class="container">
+
+              <form name="profileForm">
+                <table>
+                  <tr>
+                    <td>Name of Cat</td>
+                    <td>Age of Cat</td>
+                    <td>Temperament of cat</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input type="text" id="catname" name="catname" placeholder="Mr.Whiskers"><br>
+                      <span id="catnameWarning" class="alert"></span>
+                    </td>
+                    <td>
+                      <input type="number" id="age" name="age" placeholder="2">
+                      <span id="ageWarning" class="alert"></span>
+                    </td>
+                    <td rowspan="3" id="ullist"> 
+                      <option><input type="radio" id="Friendly" name="toc" value="Friendly" checked> Friendly<br></option>
+                      <option><input type="radio" id="Sleepy" name="toc" value="Sleepy">Sleepy<br></option>
+                      <option><input type="radio" id="Independent" name="toc" value="Independent">Independent<br></option>
+                      <option><input type="radio" id="Terrlrotial" name="toc" value="Terrlrotial" onclick="myFunction()"> Terrlrotial<br></option>
+                      <div>
+                          <option id="describeT" name="describeT" style="display:none">Describe Terrlrotial <br>
+                          <input  type="text" id="Describe_Terrlrotial" name="describeT" value="" placeholder=""></option>
+                      </div>
+                      <script>
+                          function myFunction() {
+                              var checkBox = document.getElementById("Terrlrotial");
+                              var text = document.getElementById("describeT");
+                              if (checkBox.checked == true){
+                                  text.style.display = "block";                                      
+                              } else {
+                                  text.style.display = "none";                                        
+                              }
+                          }                          
+                      </script>
+                      <span id="temprementWarning" class="alert"></span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <tr>
+                      <td colspan="4" >
+                          <label for="days">Days Needed</label><br>
+                          <div name="days" id="days">
+                              <option id="mon" name="days" class="checkbox-inline"><input type="checkbox" value="mon"> Mon</option>
+                              <option id="tue" name="days" class="checkbox-inline"><input type="checkbox" value="tue"> Tue</option>
+                              <option id="wed" name="days" class="checkbox-inline"><input type="checkbox" value="wed"> Wed</option>
+                              <option id="thu" name="days" class="checkbox-inline"><input type="checkbox" value="thu"> Thu</option>
+                              <option id="fri" name="days" class="checkbox-inline"><input type="checkbox" value="fri"> Fri</option>
+                              <option id="sat" name="days" class="checkbox-inline"><input type="checkbox" value="" disabled> Sat</option>
+                              <option id="sun" name="days" class="checkbox-inline"><input type="checkbox" value="" disabled> Sun</option>   
+                          </div>
+                          <span id="daysWarning" class="alert"></span>
+                      </td>                   
+                  </tr>
+                  </tr>
+                  <tr>
+                    <td>
+                        <label for="Time_Arrive">Time Arrive </label>
+                    </td>
+                    <td>
+                        <label for="Time_Leave">Time Leave </label>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                        <select name="arrivetime" id="arrivetime">
+                            <option value=""></option>
+                            <option value="06:00">06.00 AM</option>
+                            <option value="06:30">06.30 AM</option>
+                            <option value="07:00">07.00 AM</option>
+                            <option value="07:30">07.30 AM</option>
+                            <option value="08:00">08.00 AM</option>
+                            <option value="08:30">08.30 AM</option>
+                            <option value="09:00">09.00 AM</option>
+                            <option value="09:30">09.30 AM</option>
+                            <option value="10:00">10.00 AM</option>
+                            <option value="10:30">10.30 AM</option>
+                            <option value="11:00">11.00 AM</option>
+                            <option value="11:30">11.30 AM</option>
+                            <option value="12:00">12.00 PM</option>
+                            <option value="12:30">12.30 PM</option>
+                            <option value="13:00">01.00 PM</option>
+                            <option value="13:30">01.30 PM</option>
+                            <option value="14:00">02.00 PM</option>
+                            <option value="14:30">02.30 PM</option>
+                            <option value="15:00">03.00 PM</option>
+                            <option value="15:30">03.30 PM</option>
+                            <option value="16:00">04.00 PM</option>
+                            <option value="16:30">04.30 PM</option>
+                            <option value="17:00">05.00 PM</option>
+                            <option value="17:30">05.30 PM</option>
+                            <option value="18:00">06.00 PM</option>
+                            <option value="18:30">06.30 PM</option>
+                            <option value="19:00">07.00 PM</option>
+                            <option value="19:30">07.30 PM</option>
+                            <option value="20:00">08.00 PM</option>
+                            <option value="20:30">08.30 PM</option>
+                            <option value="21:00">09.00 PM</option>
+                            <option value="21:30">09.30 PM</option>
+                            <option value="22:00">10.00 PM</option>
+                            <option value="22:30">10.30 PM</option>
+                            <option value="23:00">11.00 PM</option>
+                            <option value="23:30">11.30 PM</option>
+                            <option value="23:30">12.00 AM</option>
+                        </select><br>
+                        <span id="arriveWarning" class="alert"></span>
+                    </td>
+                    
+                    <td>
+                        <select name="leavetime" id="leavetime" >
+                            <option value=""></option>
+                            <option value="10:00">10.00 AM</option>
+                            <option value="10:30">10.30 AM</option>
+                            <option value="11:00">11.00 AM</option>
+                            <option value="11:30">11.30 AM</option>
+                            <option value="12:00">12.00 PM</option>
+                            <option value="12:30">12.30 PM</option>
+                            <option value="13:00">01.00 PM</option>
+                            <option value="13:30">01.30 PM</option>
+                            <option value="14:00">02.00 PM</option>
+                            <option value="14:30">02.30 PM</option>
+                            <option value="15:00">03.00 PM</option>
+                            <option value="15:30">03.30 PM</option>
+                            <option value="16:00">04.00 PM</option>
+                            <option value="16:30">04.30 PM</option>
+                            <option value="17:00">05.00 PM</option>
+                            <option value="17:30">05.30 PM</option>
+                            <option value="18:00">06.00 PM</option>
+                        </select><br>
+                        <span id="leaveWarning" class="alert"></span>
+                    </td>                    
+                  </tr>
+                  <tr>
+                    <td>
+                      <input type="checkbox" value=""><label for="spayed"> Cat spayed/neutered </label> <br>
+                      
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <label for="diet"><input id="specialdiet" type="checkbox" value="yes"  name="specialdiet" onclick="myDietFunction()" > Special Diet </label> <br>                      
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>                      
+                      <label for="Describe_diet" style="display:none" id="Describe_diet">Describe Diet <br>
+                      <input type="text" id="diet" name="diet" placeholder="Mr.Whiskers eats only live mice."></label>
+                      <span id="dietWarning" class="alert"></span>
+                      <script>
+                          function myDietFunction() {
+                              var checkBox = document.getElementById("specialdiet");
+                              var text = document.getElementById("Describe_diet");
+                              if (checkBox.checked == true){
+                                  text.style.display = "block";
+                                  document.querySelector('#dietWarning').textContent = "*Please describe diet*";                                      
+                              }
+                          }                          
+                      </script>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td colspan="2">
+                        <label for="oname">Owner's Name </label><br>
+                        <input type="text" id="Ownersname" name="Ownersname" placeholder="Cat Owner"><br>
+                        <span id="OwnernameWarning" class="alert"></span>
+                    </td>
+                    <td>
+                        <label for="emgname">Emergancy Contact Name </label><br>
+                        <input type="text" id="emgsname" name="emgsname" placeholder="Cat Friend"><br>
+                        <span id="cnameWarning" class="alert"></span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td colspan="2">
+                        <label for="daytimephone">Daytime Phone </label><br>
+                        <input class="phone" type="tel" id="daytimephone" name="daytimephone" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" placeholder="(123) 456-7980"> <br>
+                        <span id="dayphoneWarning" class="alert"></span>
+                    </td>                    
+                    <td>
+                      <label for="cphone">Contact Phone </label><br>
+                      <input class="phone" type="tel" id="cphone" name="cphone" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" placeholder="(123) 456-7980"><br>
+                      <span id="cphoneWarning" class="alert"></span>
+                    </td>                    
+                  </tr>
+                  <tr>
+                    <td colspan="2">
+                        <label for="cellphone">Cell Phone </label><br>
+                        <input class="phone" type="tel" id="cellphone" name="cellphone" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" placeholder="(123) 456-7980">
+                        <span id="cellphoneWarning" class="alert"></span>
+                    </td>                    
+                  </tr>
+                  <tr>
+                    <td>
+                        <label for="email">Email: </label><br>
+                        <input type="email" id="email" name="email" placeholder="catowner@fluffy.com" onfocusout="checkEmail()">
+                        <span id="emailWarning" class="alert"></span>
+                    </td>                    
+                  </tr>     
+                  <tr>
+                    <td><input type="submit" value="Submit" name="submitBtn" class="registerbtn"></td>
+                  </tr>
+                </table>
+            </form>
+            <footer>
+              <img src="images/PetDiversityPlusLogo.png" alt="petdiversityplus" width="80px" height="55px">
+              <img src="images/BBBcertified.png" alt="footerlogo">
+              <address>
+                  123 Fluffy Street<br>
+                  Ottawa, Ontario
+              </address>
+                  (613) 123-CATS<br>
+                  <a href="mailto:fluffyfriends@catdaycare.ca?subject=inquiry%20from%20website">
+                      fluffyfriends@catdaycare.ca</a>             
+            </footer>
+    <script src="script/validation.js"></script>
+  </body>
+</html>
